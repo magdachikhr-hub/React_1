@@ -7,7 +7,7 @@ function App() {
       <main className="bg-[url('/Desktop.jpg')] h-screen bg-no-repeat bg-cover">
         <Header></Header>
 
-        <div className="flex">
+        <div className="flex justify-center mt-16">
           <Card
             info={{
               plan: "Basic",
