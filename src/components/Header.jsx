@@ -1,4 +1,9 @@
+import { useState } from "react";
+import ButtonSecond from "./Btn";
+
 function Header() {
+  const [count, setCount] = useState(0);
+
   return (
     <>
       <header className="flex flex-col justify-center items-center pt-17.75">
@@ -11,8 +16,17 @@ function Header() {
             <span className="dot absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-200 ease-in-out peer-checked:translate-x-5"></span>
           </label>
           <span className="text-[#6E728E] text-[15px] font-bold">Monthly</span>
+          <button
+            onClick={() => {
+              setCount((c) => c + 1);
+            }}
+          >
+            click me
+          </button>
+          <span>count is {count}</span>
         </div>
       </header>
+      <ButtonSecond count={count}></ButtonSecond>
     </>
   );
 }
