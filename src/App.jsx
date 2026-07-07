@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Card from "./components/Card";
+import Menu from "./components/Menu";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             }}
           ></Card>
         </div>
+        <Menu></Menu>
       </main>
     </>
   );
